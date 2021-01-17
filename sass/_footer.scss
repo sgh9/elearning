@@ -1,0 +1,39 @@
+.footer {
+
+      background-color: $color-blue-dark;
+      grid-column: 1/-1;
+      grid-row: 7/-1;
+      padding: 5rem 0 0 0;
+ 
+    text-align: center;
+
+      h2 {
+            color: #fff;
+      }
+
+      nav {
+            margin-top: 4rem;
+            display: flex;
+            justify-content: center;
+      }
+      nav a{
+            width: 100%;
+            color: #fff;
+      }
+
+&__social {
+    margin-top: 4rem;
+      width: 100%;
+      background-color: #fff;
+      height: 8rem;
+      display: flex;
+      padding: 0 4rem;
+      align-items: center;
+
+      .icon {
+            width: 2rem;
+            height: 2rem;
+            margin: 0 2rem;
+      }
+}
+}
