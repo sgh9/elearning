@@ -38,10 +38,10 @@ body {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(10rem, 1fr) (minmax(min-content, 25rem))[6] minmax(10rem, 1fr);
+  -ms-grid-columns: minmax(10rem, 1fr) (minmax(min-content, 25rem)) minmax(10rem, 1fr);
       grid-template-columns: minmax(10rem, 1fr) repeat(6, minmax(-webkit-min-content, 25rem)) minmax(10rem, 1fr);
       grid-template-columns: minmax(10rem, 1fr) repeat(6, minmax(min-content, 25rem)) minmax(10rem, 1fr);
-  -ms-grid-rows: 5rem minmax(90vh, min-content) (minmax(5rem, min-content))[6];
+  -ms-grid-rows: 5rem minmax(90vh, min-content) (minmax(5rem, min-content));
       grid-template-rows: 5rem minmax(90vh, -webkit-min-content) repeat(6, minmax(5rem, -webkit-min-content));
       grid-template-rows: 5rem minmax(90vh, min-content) repeat(6, minmax(5rem, min-content));
   -webkit-box-pack: center;
@@ -59,10 +59,10 @@ body {
   grid-row: 2/3;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(max-content, 1fr))[4];
+  -ms-grid-columns: (minmax(max-content, 1fr));
       grid-template-columns: repeat(4, minmax(-webkit-max-content, 1fr));
       grid-template-columns: repeat(4, minmax(max-content, 1fr));
-  -ms-grid-rows: minmax(30vh, min-content) (minmax(10vh, auto))[3];
+  -ms-grid-rows: minmax(30vh, min-content) (minmax(10vh, auto));
       grid-template-rows: minmax(30vh, -webkit-min-content) repeat(3, minmax(10vh, auto));
       grid-template-rows: minmax(30vh, min-content) repeat(3, minmax(10vh, auto));
   grid-gap: 2rem;
@@ -335,10 +335,10 @@ input::placeholder {
   grid-row: 4/5;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(min-content, 1fr))[6];
+  -ms-grid-columns: (minmax(min-content, 1fr));
       grid-template-columns: repeat(6, minmax(-webkit-min-content, 1fr));
       grid-template-columns: repeat(6, minmax(min-content, 1fr));
-  -ms-grid-rows: (1fr)[4];
+  -ms-grid-rows: (1fr);
       grid-template-rows: repeat(4, 1fr);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -496,7 +496,7 @@ input::placeholder {
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: min-content (min-content)[3];
+  -ms-grid-rows: min-content (min-content);
       grid-template-rows: -webkit-min-content repeat(3, -webkit-min-content);
       grid-template-rows: min-content repeat(3, min-content);
   -webkit-box-pack: center;
